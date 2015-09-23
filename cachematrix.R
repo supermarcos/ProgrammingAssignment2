@@ -33,7 +33,7 @@ cacheSolve <- function(x, ...) {
         inv <- solve(mat, ...)
         x$setInverse(inv)
     } else {
-        message("the data is cached")
+        message("the data is cached") # this else part is just to show that the data returned is the cached one...
     }
     # this will return the cached data when is.null(inv) is not TRUE
     return(inv)
